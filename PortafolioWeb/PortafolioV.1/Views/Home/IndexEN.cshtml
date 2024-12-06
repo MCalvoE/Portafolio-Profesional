@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header>
+    <a href="#inicio" class="logo">MatCalDev</a>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#sobremi">About Me</a></li>
+            <li><a href="#trabajos">Works</a></li>
+            <li><a href="#contacto">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main"></div>
+
+<div class="idiomas">
+    <span class="es">Español</span>
+    <input type="checkbox" class="check" checked>
+    <span class="en">English</span>
+</div>
+
+<!-- Inicio -->
+<section id="inicio" class="section">
+    <div class="container">
+        <div class="logo">
+            <img src="~/media/ImagenWebFavIcon.png" alt="Logo" />
+        </div>
+        <h1 class="title">MATCALDEV</h1>
+        <p class="subtitle">WHERE DEEP SPACE MEETS DEEP LEARNING</p>
+    </div>
+</section>
+
+<!-- Sobre Mí -->
+<section id="sobremi" class="section">
+    <div class="container">
+        <h2>Matías Calvo Echeverría</h2>
+        <p class="subtitle">Software Developer</p>
+        <p>
+            I am a software developer passionate about artificial intelligence and astrophysics,
+            fields that inspire my work and my constant pursuit of knowledge. With experience in web application
+            development, databases, and advanced algorithms, my goal is to create innovative and efficient
+            technological solutions that integrate science and technology to solve complex problems. My main focus
+            lies in using machine learning and data analysis in interdisciplinary projects that not only drive
+            technological advancements but also contribute to understanding the universe and advancing the scientific community.
+        </p>
+        <p class="subtitle">Resume: <a href="~/media/Curriculum Vitae (Español) - Matías Calvo.pdf">Spanish  </a><a href="~/media/Curriculum Vitae (Inglés) - Matías Calvo.pdf">  English</a></p>
+        <p class="subtitle">Prices: <a href="~/media/Cotización Web (Español) - Matías Calvo.pdf">Spanish  </a><a href="~/media/Cotización Web (Inglés) - Matías Calvo.pdf">  English</a></p>
+    </div>
+</section>
+
+<!-- Trabajos -->
+<section id="trabajos" class="section">
+    <div class="Acontainer">
+        <h2>Works</h2>
+        <p class="subtitle">University Projects</p>
+        <p>
+            I am a software developer with experience in designing and building web applications tailored to specific needs.
+            I have worked on projects such as creating an e-commerce system for agricultural products, integrating user
+            and role management functions, and a gym management application that includes reservations, online payments,
+            and CRUD functionalities. My approach combines front-end and back-end development skills to deliver complete solutions.
+        </p>
+        <div class="slider-box">
+            <ul>
+                <li><img src="~/media/Proyecto2Muestra.png" alt="Alternate Text" /></li>
+                <li><img src="~/media/Proyect1Muestra.png" alt="Alternate Text" /></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="form-register">
+    <form action="https://formsubmit.co/matiascalvoecheverria@gmail.com" method="POST">
+        <h4>Contact</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Name">
+        <input class="controls" type="text" name="telefono" id="telefono" placeholder="Phone">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Email">
+        <input class="controls" name="message" id="message" placeholder="Message">
+        <input class="botons" type="submit" value="Send">
+    </form>
+</section>
